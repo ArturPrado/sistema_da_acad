@@ -1,0 +1,113 @@
+/* Estilos globais */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Estilos para o formulário de cadastro */
+
+.form-cadastro {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-cadastro h3 {
+  color: #6c5ce7;
+  margin-bottom: 20px;
+}
+
+.form-cadastro input[type="text"],
+.form-cadastro input[type="email"],
+.form-cadastro input[type="number"],
+.form-cadastro input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-cadastro input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-cadastro input[type="submit"]:hover {
+  background-color: #5c48e4;
+}
+
+/* Estilos para o formulário de login */
+
+.form-login {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-login h3 {
+  color: #6c5ce7;
+  margin-bottom: 20px;
+}
+
+.form-login input[type="text"],
+.form-login input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-login input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-login input[type="submit"]:hover {
+  background-color: #5c48e4;
+}
+
+/* Estilos para os links */
+
+.link {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #5c48e4;
+}
+
+.fundo {
+  background-image: url('imagem.jpg');
+  background-size: cover;
+  background-position: center;
+}
