@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanastrio GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <a href="logo.png"></a>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="sistema_da_acad/AULA SISTEMA/pages/home.html">Home</a></li>
+            <li><a href="sistema_da_acad/AULA SISTEMA/pages/sobre nós/sobre.html">Sobre</a></li>
+            <li><a href="sistema_da_acad/AULA SISTEMA/pages/serviços/serviços.html">Serviços</a></li>
+            <li><a href="sistema_da_acad/AULA SISTEMA/pages/contato/contato.html">Contato</a></li>
+          </ul>
+        </nav>
+    </header>
+      <main>
+        <section id="home">
+          <h1>Bem-vindo à Academia Fit</h1>
+          <p>Transforme seu corpo e sua vida com nossos treinos personalizados e equipamentos de última geração.</p>
+          <button>Quero saber mais</button>
+        </section>
+        <section id="sobre">
+          <h2>Sobre Nós</h2>
+          <p>A Academia Kanastrio é uma instituição de treinamento físico que oferece programas personalizados para atender às necessidades de cada cliente.</p>
+          <p>Nossa equipe de profissionais é treinada para ajudá-lo a alcançar seus objetivos de forma segura e eficaz.</p>
+        </section>
+        <section id="servicos">
+          <h2>Serviços</h2>
+          <ul>
+            <li>Treinos personalizados</li>
+            <li>Equipamentos de última geração</li>
+            <li>Aulas de grupo</li>
+            <li>Nutrição personalizada</li>
+          </ul>
+        </section>
+        <section id="contato">
+          <h2>Contato</h2>
+          <p>Entre em contato conosco para saber mais sobre nossos serviços e programas.</p>
+          <form>
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Mensagem"></textarea>
+            <button>Enviar</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 Kanastrio GYM CLUBE. Todos os direitos reservados.</p>
+      </footer>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBFpCbnzcZ_VToV-4O82hU98zvSfP63F4Y",
+          authDomain: "academia-b4622.firebaseapp.com",
+          projectId: "academia-b4622",
+          storageBucket: "academia-b4622.firebasestorage.app",
+          messagingSenderId: "449975159210",
+          appId: "1:449975159210:web:2c907504c696c429fe43d3",
+          measurementId: "G-CKZD1DQQR3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
