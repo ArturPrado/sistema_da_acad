@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Kanastrio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Kanastrio Logo" />
+        </div>
+        <h1>Bem-vindo ao Kanastrio</h1>
+    </header>
+    <div class="form-container">
+        <form class="form-cadastro" onsubmit="cadastrar(event)">
+            <h3>Cadastro</h3>
+            <input type="text" placeholder="Nome" id="nome" />
+            <input type="text" placeholder="Sobrenome" id="sobrenome" />
+            <input type="email" placeholder="Email" id="email" />
+            <input type="tel" placeholder="Telefone" id="telefone" />
+            <input type="password" placeholder="Senha" id="senha-cadastro" />
+            <input type="submit" value="Cadastrar" />
+        </form>
+        <form class="form-login" onsubmit="logar(event)">
+            <h3>Login</h3>
+            <input type="text" placeholder="Email" id="login" />
+            <input type="password" placeholder="Senha" id="senha-login" />
+            <input type="submit" value="Logar" />
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
