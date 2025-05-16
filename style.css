@@ -74,7 +74,7 @@ input, textarea, select {
   border-radius: 8px;
   border: 1.5px solid #555;
   background-color: #2c2c54;
-  color: #ddd;
+  color: #FAFAFA;
   transition: border-color 0.3s ease, background-color 0.3s ease;
   width: 100%;
   margin-bottom: 1rem;
@@ -118,25 +118,24 @@ caption {
   color: #a29bfe;
 }
 
-/* Existing styles below */
 
 header {
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   display: flex;
   align-items: center;
   gap: 30px;
   margin-bottom: 40px;
   color: #222;
-  background-color: #fff;
-  padding: 50px 5px;
+  background-color: #fafafa;
+  padding: 50px 84px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   height: 100px;
 }
 
 .logo img {
-  height: 80px;
+  height: 92px;
   width: auto;
   filter: none;
 }

@@ -15,21 +15,37 @@
         <h1>Bem-vindo ao Kanastrio</h1>
     </header>
     <div class="form-container">
-        <form class="form-cadastro" onsubmit="cadastrar(event)">
-            <h3>Cadastro</h3>
-            <input type="text" placeholder="Nome" id="nome" />
-            <input type="text" placeholder="Sobrenome" id="sobrenome" />
-            <input type="email" placeholder="Email" id="email" />
-            <input type="tel" placeholder="Telefone" id="telefone" />
-            <input type="password" placeholder="Senha" id="senha-cadastro" />
-            <input type="submit" value="Cadastrar" />
-        </form>
-        <form class="form-login" onsubmit="logar(event)">
-            <h3>Login</h3>
-            <input type="text" placeholder="Email" id="login" />
-            <input type="password" placeholder="Senha" id="senha-login" />
-            <input type="submit" value="Logar" />
-        </form>
+        <button id="btn-cadastro" type="button">Cadastro</button>
+        <button id="btn-login" type="button">Login</button>
+    </div>
+
+    <!-- Cadastro Modal -->
+    <div class="overlay" id="cadastro-modal" style="display:none;">
+        <div class="modal">
+            <button class="close-btn" id="close-cadastro">&times;</button>
+            <form class="form-cadastro" onsubmit="cadastrar(event)">
+                <h3>Cadastro</h3>
+                <input type="text" placeholder="Nome" id="nome" />
+                <input type="text" placeholder="Sobrenome" id="sobrenome" />
+                <input type="email" placeholder="Email" id="email" />
+                <input type="tel" placeholder="Telefone" id="telefone" />
+                <input type="password" placeholder="Senha" id="senha-cadastro" />
+                <input type="submit" value="Cadastrar" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="overlay" id="login-modal" style="display:none;">
+        <div class="modal">
+            <button class="close-btn" id="close-login">&times;</button>
+            <form class="form-login" onsubmit="logar(event)">
+                <h3>Login</h3>
+                <input type="text" placeholder="Email" id="login" />
+                <input type="password" placeholder="Senha" id="senha-login" />
+                <input type="submit" value="Logar" />
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -93,13 +93,43 @@ function cadastrar(event) {
     }
   }
   
-  // Adiciona os eventos aos formulários
+  // Adiciona os eventos aos formulários e botões de modal
   document.addEventListener("DOMContentLoaded", function() {
     const formCadastro = document.querySelector(".form-cadastro");
     const formLogin = document.querySelector(".form-login");
+    const btnCadastro = document.getElementById("btn-cadastro");
+    const btnLogin = document.getElementById("btn-login");
+    const cadastroModal = document.getElementById("cadastro-modal");
+    const loginModal = document.getElementById("login-modal");
+    const closeCadastro = document.getElementById("close-cadastro");
+    const closeLogin = document.getElementById("close-login");
   
     if (formCadastro) formCadastro.addEventListener("submit", cadastrar);
     if (formLogin) formLogin.addEventListener("submit", logar);
+  
+    if (btnCadastro) {
+      btnCadastro.addEventListener("click", function() {
+        cadastroModal.style.display = "flex";
+      });
+    }
+  
+    if (btnLogin) {
+      btnLogin.addEventListener("click", function() {
+        loginModal.style.display = "flex";
+      });
+    }
+  
+    if (closeCadastro) {
+      closeCadastro.addEventListener("click", function() {
+        cadastroModal.style.display = "none";
+      });
+    }
+  
+    if (closeLogin) {
+      closeLogin.addEventListener("click", function() {
+        loginModal.style.display = "none";
+      });
+    }
   
     verificarUsuarioLogado();
   });
