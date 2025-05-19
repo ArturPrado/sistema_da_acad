@@ -1,4 +1,4 @@
-// Função para cadastrar o usuário
+
 function cadastrar(event) {
     event.preventDefault();
     const nome = document.getElementById("nome").value;
@@ -26,7 +26,6 @@ function cadastrar(event) {
     if (usuarios) {
         try {
             usuariosJSON = JSON.parse(usuarios);
-            // Verifica se o email já está cadastrado
             const usuarioExistente = usuariosJSON.find(u => u.email === email);
             if (usuarioExistente) {
                 alert("Este e-mail já está cadastrado. Tente outro.");
@@ -93,41 +92,27 @@ function cadastrar(event) {
     }
   }
   
-  // Adiciona os eventos aos formulários e botões de modal
+ 
   document.addEventListener("DOMContentLoaded", function() {
     const formCadastro = document.querySelector(".form-cadastro");
     const formLogin = document.querySelector(".form-login");
-    const btnCadastro = document.getElementById("btn-cadastro");
-    const btnLogin = document.getElementById("btn-login");
-    const cadastroModal = document.getElementById("cadastro-modal");
-    const loginModal = document.getElementById("login-modal");
-    const closeCadastro = document.getElementById("close-cadastro");
-    const closeLogin = document.getElementById("close-login");
+    const switchToLogin = document.getElementById("switch-to-login");
+    const switchToCadastro = document.getElementById("switch-to-cadastro");
   
     if (formCadastro) formCadastro.addEventListener("submit", cadastrar);
     if (formLogin) formLogin.addEventListener("submit", logar);
   
-    if (btnCadastro) {
-      btnCadastro.addEventListener("click", function() {
-        cadastroModal.style.display = "flex";
+    if (switchToLogin) {
+      switchToLogin.addEventListener("click", function() {
+        formCadastro.style.display = "none";
+        formLogin.style.display = "block";
       });
     }
   
-    if (btnLogin) {
-      btnLogin.addEventListener("click", function() {
-        loginModal.style.display = "flex";
-      });
-    }
-  
-    if (closeCadastro) {
-      closeCadastro.addEventListener("click", function() {
-        cadastroModal.style.display = "none";
-      });
-    }
-  
-    if (closeLogin) {
-      closeLogin.addEventListener("click", function() {
-        loginModal.style.display = "none";
+    if (switchToCadastro) {
+      switchToCadastro.addEventListener("click", function() {
+        formLogin.style.display = "none";
+        formCadastro.style.display = "block";
       });
     }
   

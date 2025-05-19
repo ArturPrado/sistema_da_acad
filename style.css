@@ -12,14 +12,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 0%;
   color: #ddd;
   line-height: 1.6;
+  margin: 0%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #a29bfe;
-  margin-bottom: 1rem;
   font-weight: 700;
 }
 
@@ -60,6 +60,7 @@ button {
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
 button:hover, button:focus {
@@ -195,6 +196,9 @@ nav ul li a:hover {
   width: 400px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-cadastro:hover,
@@ -254,6 +258,7 @@ nav ul li a:hover {
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
 .form-cadastro input[type="submit"]:hover,
