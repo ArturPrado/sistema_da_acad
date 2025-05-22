@@ -33,6 +33,25 @@
             <button type="button" id="switch-to-cadastro">Não tem conta? Cadastre-se</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+          apiKey: "AIzaSyDMghX2n1jRLRn6Pb8fzrUKAiOe-JOqG0g",
+          authDomain: "kanastriogym.firebaseapp.com",
+          projectId: "kanastriogym",
+          storageBucket: "kanastriogym.firebasestorage.app",
+          messagingSenderId: "325774434227",
+          appId: "1:325774434227:web:e1020c72aa6bb7e8f835c6",
+          measurementId: "G-VT2P10YRWQ"
+        };
+      
+        firebase.initializeApp(firebaseConfig);
+    </script>
+<script src="script.js"></script>
 </body>
 </html>
