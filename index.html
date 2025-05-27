@@ -15,7 +15,7 @@
         <h1>Bem-vindo ao Kanastrio</h1>
     </header>
     <div class="form-container">
-        <form class="form-cadastro" onsubmit="cadastrar(event)">
+        <form class="form-cadastro" id="form-cadastro" onsubmit="cadastrar(event)" style="display:none;">
             <h3>Cadastro</h3>
             <input type="text" placeholder="Nome" id="nome" />
             <input type="text" placeholder="Sobrenome" id="sobrenome" />
@@ -23,35 +23,21 @@
             <input type="tel" placeholder="Telefone" id="telefone" />
             <input type="password" placeholder="Senha" id="senha-cadastro" />
             <input type="submit" value="Cadastrar" />
-            <button type="button" id="switch-to-login">Já tem uma conta? Login</button>
+            <button type="button" id="btn-switch-login">Já tem uma conta? Login</button>
         </form>
-        <form class="form-login" onsubmit="logar(event)" style="display:none;">
+        <form class="form-login" id="form-login" onsubmit="logar(event)" style="display:flex;">
             <h3>Login</h3>
             <input type="text" placeholder="Email" id="login" />
             <input type="password" placeholder="Senha" id="senha-login" />
             <input type="submit" value="Logar" />
-            <button type="button" id="switch-to-cadastro">Não tem conta? Cadastre-se</button>
+            <button type="button" id="btn-switch-cadastro">Não tem conta? Cadastre-se</button>
         </form>
     </div>
-    
 
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js"></script>
-    <script>
-        const firebaseConfig = {
-          apiKey: "AIzaSyDMghX2n1jRLRn6Pb8fzrUKAiOe-JOqG0g",
-          authDomain: "kanastriogym.firebaseapp.com",
-          projectId: "kanastriogym",
-          storageBucket: "kanastriogym.firebasestorage.app",
-          messagingSenderId: "325774434227",
-          appId: "1:325774434227:web:e1020c72aa6bb7e8f835c6",
-          measurementId: "G-VT2P10YRWQ"
-        };
-      
-        firebase.initializeApp(firebaseConfig);
-    </script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
