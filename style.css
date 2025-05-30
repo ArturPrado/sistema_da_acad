@@ -269,7 +269,7 @@ nav ul li a:hover {
 
 .unidades {
   background: #6c5ce7;
-  padding: 40px 20px;
+  padding: 40px 0px;
   border-radius: 12px;
   color: #fff;
   text-align: center;
@@ -344,9 +344,60 @@ footer {
   color: #fff;
   padding: 15px;
   border-radius: 50%;
+  width: 56px;
+  height: 56px;
   font-size: 24px;
   text-align: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-fixo i {
+  font-size: 0; /* Hide font icon text */
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+}
+
+.whatsapp-fixo:hover {
+  background-color: #1ebe57;
+  box-shadow: 0 6px 20px rgba(30, 190, 87, 0.8);
+}
+
+.matricula-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 80px; /* Positioned left of whatsapp button */
+  background-color: #6c5ce7; /* Purple color */
+  color: #fff;
+  padding: 20px 50px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.matricula-fixo:hover {
+  background-color: #a29bfe;
+  box-shadow: 0 6px 20px rgba(162, 155, 254, 0.8);
+  color: #222; /* Change text color on hover for better contrast */
 }
 
 .banner {
@@ -423,12 +474,6 @@ main {
     max-width: 100%;
     margin: 0;
     padding: 0 10px;
-  }
-
-  .grid-unidades {
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 0;
   }
 
   .card {
